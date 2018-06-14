@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7036B520D2051000C2DA11 /* UIViewController+ScrollerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7036B420D2051000C2DA11 /* UIViewController+ScrollerView.m */; };
+		3F7036B820D2072200C2DA11 /* UIScrollView+ScollerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7036B720D2072200C2DA11 /* UIScrollView+ScollerBlock.m */; };
+		3FA8F76020D0CCB600DA1472 /* NESViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA8F75F20D0CCB600DA1472 /* NESViewController.m */; };
 		3FC4F94D20CF764100BCE023 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F94C20CF764100BCE023 /* AppDelegate.m */; };
 		3FC4F95020CF764100BCE023 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F94F20CF764100BCE023 /* ViewController.m */; };
 		3FC4F95320CF764100BCE023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4F95120CF764100BCE023 /* Main.storyboard */; };
 		3FC4F95520CF764400BCE023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4F95420CF764400BCE023 /* Assets.xcassets */; };
 		3FC4F95820CF764400BCE023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC4F95620CF764400BCE023 /* LaunchScreen.storyboard */; };
 		3FC4F95B20CF764400BCE023 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F95A20CF764400BCE023 /* main.m */; };
+		3FC4F96420CF777C00BCE023 /* ManegerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F96320CF777C00BCE023 /* ManegerView.m */; };
+		3FC4F96720CF7CB800BCE023 /* ManagerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F96620CF7CB800BCE023 /* ManagerConfig.m */; };
+		3FC4F96A20CFB39F00BCE023 /* TabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F96920CFB39F00BCE023 /* TabView.m */; };
+		3FC4F96D20CFB80C00BCE023 /* TabScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F96C20CFB80C00BCE023 /* TabScrollView.m */; };
+		3FC4F97020CFBDB700BCE023 /* TabManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4F96F20CFBDB700BCE023 /* TabManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7036B320D2051000C2DA11 /* UIViewController+ScrollerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ScrollerView.h"; sourceTree = "<group>"; };
+		3F7036B420D2051000C2DA11 /* UIViewController+ScrollerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ScrollerView.m"; sourceTree = "<group>"; };
+		3F7036B620D2072200C2DA11 /* UIScrollView+ScollerBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScollerBlock.h"; sourceTree = "<group>"; };
+		3F7036B720D2072200C2DA11 /* UIScrollView+ScollerBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScollerBlock.m"; sourceTree = "<group>"; };
+		3F7036B920D2604900C2DA11 /* Appconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appconfig.h; sourceTree = "<group>"; };
+		3FA8F75E20D0CCB600DA1472 /* NESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESViewController.h; sourceTree = "<group>"; };
+		3FA8F75F20D0CCB600DA1472 /* NESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESViewController.m; sourceTree = "<group>"; };
 		3FC4F94820CF764100BCE023 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC4F94B20CF764100BCE023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3FC4F94C20CF764100BCE023 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +41,17 @@
 		3FC4F95720CF764400BCE023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FC4F95920CF764400BCE023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FC4F95A20CF764400BCE023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3FC4F96220CF777C00BCE023 /* ManegerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManegerView.h; sourceTree = "<group>"; };
+		3FC4F96320CF777C00BCE023 /* ManegerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManegerView.m; sourceTree = "<group>"; };
+		3FC4F96520CF7CB800BCE023 /* ManagerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagerConfig.h; sourceTree = "<group>"; };
+		3FC4F96620CF7CB800BCE023 /* ManagerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManagerConfig.m; sourceTree = "<group>"; };
+		3FC4F96820CFB39F00BCE023 /* TabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView.h; sourceTree = "<group>"; };
+		3FC4F96920CFB39F00BCE023 /* TabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView.m; sourceTree = "<group>"; };
+		3FC4F96B20CFB80C00BCE023 /* TabScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabScrollView.h; sourceTree = "<group>"; };
+		3FC4F96C20CFB80C00BCE023 /* TabScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabScrollView.m; sourceTree = "<group>"; };
+		3FC4F96E20CFBDB700BCE023 /* TabManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabManger.h; sourceTree = "<group>"; };
+		3FC4F96F20CFBDB700BCE023 /* TabManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabManger.m; sourceTree = "<group>"; };
+		3FC4F97220CFC88300BCE023 /* ManegerViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManegerViewDataSource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +88,39 @@
 				3FC4F94C20CF764100BCE023 /* AppDelegate.m */,
 				3FC4F94E20CF764100BCE023 /* ViewController.h */,
 				3FC4F94F20CF764100BCE023 /* ViewController.m */,
+				3FA8F75E20D0CCB600DA1472 /* NESViewController.h */,
+				3FA8F75F20D0CCB600DA1472 /* NESViewController.m */,
+				3FC4F96120CF770B00BCE023 /* TabScroll */,
 				3FC4F95120CF764100BCE023 /* Main.storyboard */,
 				3FC4F95420CF764400BCE023 /* Assets.xcassets */,
 				3FC4F95620CF764400BCE023 /* LaunchScreen.storyboard */,
 				3FC4F95920CF764400BCE023 /* Info.plist */,
 				3FC4F95A20CF764400BCE023 /* main.m */,
+				3F7036B920D2604900C2DA11 /* Appconfig.h */,
 			);
 			path = NewsApp;
+			sourceTree = "<group>";
+		};
+		3FC4F96120CF770B00BCE023 /* TabScroll */ = {
+			isa = PBXGroup;
+			children = (
+				3FC4F96220CF777C00BCE023 /* ManegerView.h */,
+				3FC4F96320CF777C00BCE023 /* ManegerView.m */,
+				3FC4F96E20CFBDB700BCE023 /* TabManger.h */,
+				3FC4F96F20CFBDB700BCE023 /* TabManger.m */,
+				3FC4F96820CFB39F00BCE023 /* TabView.h */,
+				3FC4F96920CFB39F00BCE023 /* TabView.m */,
+				3FC4F96B20CFB80C00BCE023 /* TabScrollView.h */,
+				3FC4F96C20CFB80C00BCE023 /* TabScrollView.m */,
+				3FC4F96520CF7CB800BCE023 /* ManagerConfig.h */,
+				3FC4F96620CF7CB800BCE023 /* ManagerConfig.m */,
+				3FC4F97220CFC88300BCE023 /* ManegerViewDataSource.h */,
+				3F7036B320D2051000C2DA11 /* UIViewController+ScrollerView.h */,
+				3F7036B420D2051000C2DA11 /* UIViewController+ScrollerView.m */,
+				3F7036B620D2072200C2DA11 /* UIScrollView+ScollerBlock.h */,
+				3F7036B720D2072200C2DA11 /* UIScrollView+ScollerBlock.m */,
+			);
+			path = TabScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +193,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC4F96A20CFB39F00BCE023 /* TabView.m in Sources */,
+				3FA8F76020D0CCB600DA1472 /* NESViewController.m in Sources */,
 				3FC4F95020CF764100BCE023 /* ViewController.m in Sources */,
 				3FC4F95B20CF764400BCE023 /* main.m in Sources */,
+				3F7036B820D2072200C2DA11 /* UIScrollView+ScollerBlock.m in Sources */,
+				3FC4F96720CF7CB800BCE023 /* ManagerConfig.m in Sources */,
+				3FC4F96420CF777C00BCE023 /* ManegerView.m in Sources */,
+				3FC4F96D20CFB80C00BCE023 /* TabScrollView.m in Sources */,
 				3FC4F94D20CF764100BCE023 /* AppDelegate.m in Sources */,
+				3FC4F97020CFBDB700BCE023 /* TabManger.m in Sources */,
+				3F7036B520D2051000C2DA11 /* UIViewController+ScrollerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +344,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NADGHTB4RE;
+				GCC_PREFIX_HEADER = $SRCROOT/NewsApp/Appconfig.h;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +362,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NADGHTB4RE;
+				GCC_PREFIX_HEADER = $SRCROOT/NewsApp/Appconfig.h;
 				INFOPLIST_FILE = NewsApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
