@@ -38,7 +38,7 @@
         
         CGRect rect = CGRectMake(0, 0, self.bounds.size.width, managerConfig.tabHeight.floatValue);
         _tabView = [[TabView alloc] initWithFrame:rect managerConfig:managerConfig dataSource:manegerViewDataSource];
-        _tabScrollView = [[TabScrollView alloc] initWithFrame:self.bounds viewController:viewController manegerViewDataSource:manegerViewDataSource];
+        _tabScrollView = [[TabScrollView alloc] initWithFrame:self.bounds viewController:viewController manegerViewDataSource:manegerViewDataSource topOffsety:managerConfig.tabHeight.floatValue];
         _tabScrollView.delegate = self;
         
         [self addSubview:_tabScrollView];

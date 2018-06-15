@@ -14,17 +14,19 @@
 
 @property(weak,nonatomic) UIViewController *controller;
 @property(weak,nonatomic) id <ManegerViewDataSource> dataSource;
+@property(assign,nonatomic) CGFloat topOffSety;
 
 @end
 
 @implementation TabScrollView
 
--(instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)controller manegerViewDataSource:(id<ManegerViewDataSource>)dataSource{
+-(instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)controller manegerViewDataSource:(id <ManegerViewDataSource>)dataSource topOffsety:(CGFloat )offset {
     
     if (self = [super initWithFrame:frame]) {
         
         _controller = controller;
         _dataSource = dataSource;
+        _topOffSety = offset;
         self.pagingEnabled = YES;
         self.showsHorizontalScrollIndicator = NO;
         self.bounces = NO;
@@ -70,9 +72,12 @@
     
     vieController.view.frame = CGRectMake(index*CGRectGetWidth(self.frame), 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
     
+    [vieController.contentScrollView setContentInset:UIEdgeInsetsMake(_topOffSety, 0, 0, 0)];
+    
     [self addSubview:vieController.view];
     
     __weak typeof(self) weakSelf = self;
+    
     vieController.contentScrollView.scollerBlock = ^(UIScrollView *src) {
         
         if (weakSelf.contentScollerDidScroll) {
@@ -80,6 +85,8 @@
             weakSelf.contentScollerDidScroll(src);
         }
     };
+    
+    
 }
 
 

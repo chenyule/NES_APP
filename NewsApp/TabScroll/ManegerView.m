@@ -21,8 +21,6 @@
 
 @property(assign ,nonatomic) CGFloat headerHeight;
 
-@property(weak,nonatomic) UIScrollView *currentTab;
-
 @property(strong,nonatomic) UIView*headerView;
 
 @property(strong,nonatomic) ManagerConfig *managerConfig;
@@ -81,8 +79,6 @@
 
 -(void)addContentView{
     
-
-    
      _headerHeight = 0.0;
     if (_headerView) {
         _headerHeight = CGRectGetHeight(_headerView.frame);
@@ -99,17 +95,18 @@
     __weak typeof(self) weakSelf = self;
 
     _tabManger.contentScollerDidScroll = ^(UIScrollView *src) {
-      
-        weakSelf.currentTab = src;
+
         
-        if (src.contentOffset.y > 0 && !CGRectEqualToRect(weakSelf.tabManger.frame, weakSelf.bounds) ) {
+        CGFloat offset = -1 *weakSelf.managerConfig.tabHeight.floatValue;
+        
+        if (src.contentOffset.y > offset && !CGRectEqualToRect(weakSelf.tabManger.frame, weakSelf.bounds) ) {
             
             [UIView animateWithDuration:0.3 animations:^{
                 
                 weakSelf.tabManger.frame = weakSelf.bounds;
             }];
 
-        }else if (src.contentOffset.y < 0 && !CGRectEqualToRect(weakSelf.tabManger.frame, rect)){
+        }else if (src.contentOffset.y < offset && !CGRectEqualToRect(weakSelf.tabManger.frame, rect)){
 
             
             [UIView animateWithDuration:0.3 animations:^{

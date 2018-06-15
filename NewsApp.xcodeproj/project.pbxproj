@@ -29,6 +29,7 @@
 		3F7036B620D2072200C2DA11 /* UIScrollView+ScollerBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScollerBlock.h"; sourceTree = "<group>"; };
 		3F7036B720D2072200C2DA11 /* UIScrollView+ScollerBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScollerBlock.m"; sourceTree = "<group>"; };
 		3F7036B920D2604900C2DA11 /* Appconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appconfig.h; sourceTree = "<group>"; };
+		3F8C414E20D3556B00EBFD92 /* TabHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabHeader.h; sourceTree = "<group>"; };
 		3FA8F75E20D0CCB600DA1472 /* NESViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESViewController.h; sourceTree = "<group>"; };
 		3FA8F75F20D0CCB600DA1472 /* NESViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESViewController.m; sourceTree = "<group>"; };
 		3FC4F94820CF764100BCE023 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +105,8 @@
 		3FC4F96120CF770B00BCE023 /* TabScroll */ = {
 			isa = PBXGroup;
 			children = (
+				3F8C414E20D3556B00EBFD92 /* TabHeader.h */,
+				3FC4F97220CFC88300BCE023 /* ManegerViewDataSource.h */,
 				3FC4F96220CF777C00BCE023 /* ManegerView.h */,
 				3FC4F96320CF777C00BCE023 /* ManegerView.m */,
 				3FC4F96E20CFBDB700BCE023 /* TabManger.h */,
@@ -114,7 +117,6 @@
 				3FC4F96C20CFB80C00BCE023 /* TabScrollView.m */,
 				3FC4F96520CF7CB800BCE023 /* ManagerConfig.h */,
 				3FC4F96620CF7CB800BCE023 /* ManagerConfig.m */,
-				3FC4F97220CFC88300BCE023 /* ManegerViewDataSource.h */,
 				3F7036B320D2051000C2DA11 /* UIViewController+ScrollerView.h */,
 				3F7036B420D2051000C2DA11 /* UIViewController+ScrollerView.m */,
 				3F7036B620D2072200C2DA11 /* UIScrollView+ScollerBlock.h */,

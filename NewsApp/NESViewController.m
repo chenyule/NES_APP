@@ -7,7 +7,8 @@
 //
 
 #import "NESViewController.h"
-#import "UIViewController+ScrollerView.h"
+
+#import "TabHeader.h"
 
 @interface NESViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -25,7 +26,7 @@
     self.contentScrollView = self.newsTabelView;
     
     
-    //可添加 下拉刷新 下拉加载等
+    //可添加 下拉刷新 上拉加载等
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,8 +39,8 @@
     if (!_newsTabelView) {
         
         CGFloat y = 44 + CGRectGetHeight([UIApplication sharedApplication].statusBarFrame);
-        CGFloat h = CGRectGetHeight(self.view.frame) - y - (KIsiPhoneX ? 34 : 0) -44;
-        _newsTabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, h) style:UITableViewStyleGrouped];
+        CGFloat h = CGRectGetHeight(self.view.frame) - y - (KIsiPhoneX ? 34 : 0) ;
+        _newsTabelView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, h) style:UITableViewStyleGrouped];
         _newsTabelView.dataSource = self;
         _newsTabelView.delegate = self;
     }
@@ -53,7 +54,7 @@
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    return 30;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

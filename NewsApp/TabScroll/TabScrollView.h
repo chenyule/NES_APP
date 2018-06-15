@@ -17,6 +17,6 @@
 
 -(void)addViewContrllerAtIndex:(NSInteger )index;
 
--(instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)controller manegerViewDataSource:(id <ManegerViewDataSource>)dataSource;
+-(instancetype)initWithFrame:(CGRect)frame viewController:(UIViewController *)controller manegerViewDataSource:(id <ManegerViewDataSource>)dataSource topOffsety:(CGFloat )offset;
 
 @end

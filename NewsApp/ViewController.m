@@ -9,9 +9,7 @@
 #import "ViewController.h"
 #import "NESViewController.h"
 
-
-#import "ManegerView.h"
-#import "ManagerConfig.h"
+#import "TabHeader.h"
 
 @interface  TestModel : NSObject
 
@@ -120,8 +118,7 @@
 -(ManagerConfig *)managerConfig{
     
     ManagerConfig *managerConfig = [ManagerConfig new];
-    managerConfig.sliderColor = [UIColor greenColor];
-    
+    managerConfig.tabHeight = @(44);
     return managerConfig;
 }
 
